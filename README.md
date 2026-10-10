@@ -68,17 +68,6 @@ This is a curated export of sources, not a Vivado project folder — `.xpr`, `.c
 hundreds of MB of churn-prone generated content). See `REPO_NOTES.md` for the full reasoning
 behind every non-obvious file choice.
 
-## Rebuilding in Vivado
-
-1. Create a new Vivado project targeting `xc7a100tcsg324-1` (Digilent Arty A7-100T).
-2. Add everything in `rtl/` and `ip/` as design sources.
-3. Add everything in `sim/` as simulation sources.
-4. Add the `.xdc` file from `constraints/` matching whichever `top_*` module you're building as
-   the active constraint set, and set that module as the synthesis top.
-5. Run simulation on the matching testbench(es) before synthesizing, consistent with how this
-   project was built throughout (every module was simulated to a passing result before any
-   hardware integration).
-
 ## Performance
 
 | Stage | Change | Avg. total latency |
@@ -98,15 +87,6 @@ MAC errors, zero FIFO overflows/underruns, and 1000/1000 valid replies, before b
 | Block RAM Tile | 1 | 5 |
 | Price levels per side | 32 | 1024 |
 
-## Status
-
-All 6 planned phases (UART bring-up, Ethernet MAC, ARP, IPv4/UDP, cycle-accurate latency
-measurement, NASDAQ ITCH decoding with order book and depth aggregation) are complete,
-simulation-verified, and hardware-validated end to end against real, unmodified network traffic —
-including a real NASDAQ exchange trading session. One known piece of open future work: duplicate
-order-reference handling in the order book (found during real-market-data validation; see the
-project paper for the full writeup).
-
 ## Author
 
-Yvonne &mdash; Cornell University, Electrical and Computer Engineering
+Yvonne Bao &mdash; Cornell University, Electrical and Computer Engineering
