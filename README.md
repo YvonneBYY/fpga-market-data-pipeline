@@ -1,4 +1,3 @@
-# fpga-market-data-pipeline
 # FPGA Market Data Pipeline
 
 A complete, hand-written network and market-data processing stack in Verilog — raw Ethernet
