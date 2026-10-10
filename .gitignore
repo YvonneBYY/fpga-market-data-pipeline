@@ -1,0 +1,23 @@
+# Vivado project-generated directories -- all fully regenerable from
+# the sources in rtl/, sim/, constraints/, and ip/. None of this should
+# ever be committed (it's hundreds of MB and churns on every build).
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.xpr
+*.str
+*.jou
+*.log
+.Xil/
+vivado*.jou
+vivado*.log
+webtalk*.log
+webtalk*.jou
+
+# Editor / OS cruft
+.DS_Store
+Thumbs.db
+*.swp
