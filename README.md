@@ -58,9 +58,6 @@ sim/          Testbenches (21 files, one per unit-tested module plus the
               CAM-vs-BRAM stress-test comparison)
 constraints/  Per-top-level .xdc pin/timing constraints (11 files)
 ip/           Xilinx IP core configs (.xci) for the clocking wizard and ILA
-REPO_NOTES.md Curation notes: which near-duplicate files were kept/dropped
-              and why, when this repo was assembled from the full Vivado
-              project
 ```
 
 This is a curated export of sources, not a Vivado project folder — `.xpr`, `.cache`, `.gen`,
