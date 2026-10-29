@@ -86,4 +86,4 @@ MAC errors, zero FIFO overflows/underruns, and 1000/1000 valid replies, before b
 
 ## Author
 
-Yvonne Bao &mdash; Cornell University, Electrical and Computer Engineering
+Yvonne Bao
